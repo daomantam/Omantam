@@ -1,0 +1,14 @@
+[
+    {
+        "type": "lecture",
+        "title": "Programming 1",
+        "date": "2025-08-01",
+        "time": "10:00 AM"
+    },
+    {
+        "type": "exam",
+        "title": "Electrical Machines",
+        "date": "2025-08-01",
+        "time": "2:00 PM"
+    }
+]
