@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TekBot</title>
+    <script>
+        async function sendMessage() {
+            const userInput = document.getElementById("userInput").value;
+            const res = await fetch("/ask", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message: userInput })
+            });
+            const data = await res.json();
+            document.getElementById("botResponse").innerText = data.response;
+        }
+    </script>
+</head>
+<body>
+    <h1>👋 Welcome to TekBot</h1>
+    <input type="text" id="userInput" placeholder="Ask TekBot anything..." />
+    <button onclick="sendMessage()">Ask</button>
+    <p id="botResponse"></p>
+</body>
+</html>
+
+
+
+
+
+
+
