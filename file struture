@@ -1,0 +1,10 @@
+tekbot/
+│
+├── app.py                 # Flask application
+├── data/
+│   └── materials.json     # Static study materials
+├── templates/
+│   └── home.html          # Simple user interface
+├── static/
+│   └── style.css
+└── reminders.json         # Stores lecture and exam reminders
